@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <SDL.h>
 
 extern "C" void function(void *pPixelBuffer, int width, int height);
