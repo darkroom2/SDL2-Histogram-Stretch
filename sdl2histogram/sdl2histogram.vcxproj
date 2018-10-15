@@ -154,6 +154,21 @@
     <ClCompile Include="sdl2histogram.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <CustomBuild Include="asm.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\rkomo\source\repos\sdl2histogram\packages\nasm2.2.13.3.1\tools\nasm.exe   -f win32   asm.asm</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">asm.obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\rkomo\source\repos\sdl2histogram\packages\nasm2.2.13.3.1\tools\nasm.exe   -f win32   asm.asm</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">asm.obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\rkomo\source\repos\sdl2histogram\packages\nasm2.2.13.3.1\tools\nasm.exe   -f win64   asm.asm</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">asm.obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\rkomo\source\repos\sdl2histogram\packages\nasm2.2.13.3.1\tools\nasm.exe   -f win64   asm.asm</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">asm.obj</Outputs>
+    </CustomBuild>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
