@@ -53,8 +53,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <ImportGroup Label="ExtensionSettings">
-  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings" />
   <ImportGroup Label="Shared">
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -160,13 +159,13 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\rkomo\source\repos\sdl2histogram\packages\nasm2.2.13.3.1\tools\nasm.exe   -f win32   asm.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\rkomo\source\repos\sdl2histogram\packages\nasm2.2.13.3.1\tools\nasm.exe -f win32 -gcv8 asm.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">asm.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\rkomo\source\repos\sdl2histogram\packages\nasm2.2.13.3.1\tools\nasm.exe   -f win32   asm.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\rkomo\source\repos\sdl2histogram\packages\nasm2.2.13.3.1\tools\nasm.exe -f win32 -gcv8 asm.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">asm.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\rkomo\source\repos\sdl2histogram\packages\nasm2.2.13.3.1\tools\nasm.exe   -f win64   asm.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\rkomo\source\repos\sdl2histogram\packages\nasm2.2.13.3.1\tools\nasm.exe -f win64 -gcv8 asm.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">asm.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\rkomo\source\repos\sdl2histogram\packages\nasm2.2.13.3.1\tools\nasm.exe   -f win64   asm.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\rkomo\source\repos\sdl2histogram\packages\nasm2.2.13.3.1\tools\nasm.exe -f win64 -gcv8 asm.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">asm.obj</Outputs>
     </CustomBuild>
     <None Include="packages.config" />
