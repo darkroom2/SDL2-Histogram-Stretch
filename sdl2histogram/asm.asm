@@ -22,7 +22,7 @@ iLoop:
 	mov ebx, 0
 jLoop:
 	;do stuff there
-	mov byte[edx], 54w
+	mov byte[edx], 244
 	add edx, 1
 
 	cmp ebx, [height]
