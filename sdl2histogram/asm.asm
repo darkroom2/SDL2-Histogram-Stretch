@@ -1,8 +1,8 @@
 section .data
 width: dd 0
 height: dd 0
-min: dd 255
-max: dd 0
+;min: dd 255
+;max: dd 0
 
 section .text
 bits 32
@@ -22,7 +22,7 @@ iLoop:
 	mov ebx, 0
 jLoop:
 	;do stuff there
-	mov byte[edx], 244
+	mov byte[edx], 55
 	add edx, 1
 
 	cmp ebx, [height]
