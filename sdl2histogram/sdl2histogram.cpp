@@ -9,7 +9,7 @@ private:
 	SDL_Renderer *rend;
 
 	void histogramStretch() {
-		int min = 255;
+		int min = 255; // to check whos commiting
 		int max = 0;
 		int lut[256] = {};
 
